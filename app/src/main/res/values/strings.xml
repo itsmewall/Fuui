@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Projeto Fuui!</string>
+    <string name="singin">Sing in</string>
+    <string name="institucionalemail">Institucional Email</string>
+    <string name="password">Password</string>
+    <string name="hiwelcome">Hi, Welcome!</string>
+    <string name="text_cadastro1" tools:ignore="StringEscaping">Don't have an account</string>
+    <string name="text_cadastro2" tools:ignore="StringEscaping">Sing up</string>
+    <string name="forgotpassword">Forgot Password?</string>
+</resources>
