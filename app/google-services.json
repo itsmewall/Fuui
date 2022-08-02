@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "210504548259",
+    "project_id": "fuui-c3d1e",
+    "storage_bucket": "fuui-c3d1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210504548259:android:977e2ea6a82bfaf4cc2416",
+        "android_client_info": {
+          "package_name": "com.unbds.fuui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210504548259-j408qqelv6ji38nlr1ug01sn1srrusl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk9uPPQduRR4VyF4XwPAJnT4uXwXeMDNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210504548259-j408qqelv6ji38nlr1ug01sn1srrusl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
