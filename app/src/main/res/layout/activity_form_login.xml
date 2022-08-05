@@ -39,26 +39,29 @@
     <EditText
         android:id="@+id/email"
         style="@style/Edit_Text"
-        android:drawableEnd="@drawable/ic_email"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="20dp"
         android:inputType="textEmailAddress"
         android:hint="@string/institucionalemail"
         android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hi"
-        tools:ignore="Autofill,MissingConstraints,TextFields" />
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
 
     <EditText
         android:id="@+id/password"
         style="@style/Edit_Text"
         android:hint="@string/password"
-        android:drawableEnd="@drawable/ic_olho"
         android:inputType="numberPassword"
+        android:drawableStart="@drawable/ic_key"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawablePadding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email"
         android:layout_marginTop="20dp"
-        tools:ignore="Autofill,MissingConstraints,TextFields" />
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
@@ -67,7 +70,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         tools:ignore="MissingConstraints" />
 
     <TextView

@@ -1,10 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".FormCadastro">
+    tools:context=".FormCadastro"
+    tools:ignore="RedundantNamespace">
+
+    <ImageView
+        android:id="@+id/perfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/perfil"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/register"
+        style="@style/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/perfil" />
+
+    <EditText
+        android:id="@+id/fullname"
+        style="@style/Edit_Text"
+        android:hint="@string/fullname"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register"
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
+
+    <EditText
+        android:id="@+id/gender"
+        style="@style/Edit_Text2"
+        android:layout_marginTop="20dp"
+        android:hint="@string/gender"
+        android:drawableStart="@drawable/ic_gender"
+        android:drawablePadding="20dp"
+        app:layout_constraintStart_toStartOf="@id/fullname"
+        app:layout_constraintTop_toBottomOf="@id/fullname"
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
+
+    <EditText
+        android:id="@+id/Age"
+        style="@style/Edit_Text2"
+        android:layout_marginTop="20dp"
+        android:hint="@string/age"
+        android:drawableStart="@drawable/ic_idade"
+        android:drawablePadding="20dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/fullname"
+        app:layout_constraintTop_toBottomOf="@id/fullname"
+        tools:ignore="Autofill,MissingConstraints,TextFields" />
+
+    <EditText
+        android:id="@+id/email"
+        style="@style/Edit_Text"
+        android:hint="@string/institucionalemail"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gender"
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
+
+    <EditText
+        android:id="@+id/create"
+        style="@style/Edit_Text"
+        android:hint="@string/createpss"
+        android:inputType="numberPassword"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_key"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
+
+    <EditText
+        android:id="@+id/confirm"
+        style="@style/Edit_Text"
+        android:hint="@string/confirmpss"
+        android:inputType="numberPassword"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_key"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create"
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/Button"
+        android:text="@string/register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirm"
+        android:layout_marginTop="30dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_cadastro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/text_cadastro4"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text_cadastro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_cadastro3"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
