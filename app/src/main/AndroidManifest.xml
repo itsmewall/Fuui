@@ -17,13 +17,13 @@
             android:name=".FormInicial"
             android:exported="false" />
         <activity
-            android:name=".FormCadastro"
+            android:name=".view.formCadastro.FormCadastro"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".FormLogin"
+            android:name=".view.formLogin.FormLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

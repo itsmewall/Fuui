@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".FormLogin"
+    tools:context=".view.formLogin.FormLogin"
     tools:ignore="RedundantNamespace">
 
     <ImageView
@@ -44,6 +44,7 @@
         android:inputType="textEmailAddress"
         android:hint="@string/emailinstitucional"
         android:layout_marginTop="70dp"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hi"
@@ -92,7 +93,7 @@
         android:id="@+id/text_cadastro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cadastrese"
+        android:text="@string/esqueceuasenha"
         android:layout_marginTop="55dp"
         android:textColor="@color/green"
         android:textSize="18sp"
@@ -100,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -112,8 +113,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
