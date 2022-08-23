@@ -11,7 +11,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".FormLogin"
+    tools:context=".view.formLogin.FormLogin"
     tools:ignore="RedundantNamespace">
 
     <ImageView
@@ -36,47 +36,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layout1"
-        android:layout_width="326dp"
-        android:layout_height="60dp"
+    <EditText
+        android:id="@+id/email"
+        style="@style/Edit_Text"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/emailinstitucional"
         android:layout_marginTop="70dp"
-        app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/hi"
-        app:layout_constraintStart_toStartOf="@id/hi"
-        app:layout_constraintTop_toBottomOf="@id/hi">
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hi"
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/email"
-            style="@style/Edit_Text"
-            android:drawableStart="@drawable/ic_email"
-            android:drawablePadding="20dp"
-            android:inputType="textEmailAddress"
-            android:hint="@string/emailinstitucional"
-            tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layout2"
-        android:layout_width="326dp"
-        android:layout_height="60dp"
+    <EditText
+        android:id="@+id/password"
+        style="@style/Edit_Text"
+        android:hint="@string/senha"
+        android:inputType="numberPassword"
+        android:drawableStart="@drawable/ic_key"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawablePadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email"
         android:layout_marginTop="20dp"
-        app:boxBackgroundColor="@color/white"
-        app:layout_constraintEnd_toEndOf="@id/layout1"
-        app:layout_constraintStart_toStartOf="@id/layout1"
-        app:layout_constraintTop_toBottomOf="@id/layout1"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/password"
-            style="@style/Edit_Text"
-            android:drawableStart="@drawable/ic_key"
-            android:drawablePadding="20dp"
-            android:hint="@string/senha"
-            android:inputType="numberPassword"
-            tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
-    </com.google.android.material.textfield.TextInputLayout>
+        tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
@@ -85,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/layout2"
+        app:layout_constraintTop_toBottomOf="@id/password"
         android:layout_marginTop="30dp"
         tools:ignore="MissingConstraints" />
 
@@ -107,7 +93,7 @@
         android:id="@+id/text_cadastro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cadastrese"
+        android:text="@string/esqueceuasenha"
         android:layout_marginTop="55dp"
         android:textColor="@color/green"
         android:textSize="18sp"
@@ -115,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -127,8 +113,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:210504548259:android:977e2ea6a82bfaf4cc2416",
         "android_client_info": {
-          "package_name": "com.unbds.fuui"
+          "package_name": "com.example.projetofuui.Fuui"
         }
       },
       "oauth_client": [
