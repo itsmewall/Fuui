@@ -14,4 +14,6 @@
     <string name="idade">Idade</string>
     <string name="crieumasenha">Crie uma senha</string>
     <string name="confirmeasenha">Confirme a senha</string>
+    <string name="menu_inicio">Início</string>
+    <string name="menu_perfil">Perfil</string>
 </resources>
