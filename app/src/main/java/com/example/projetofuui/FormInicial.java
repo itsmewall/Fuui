@@ -1,7 +1,6 @@
 package com.example.projetofuui;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +16,6 @@ public class FormInicial extends AppCompatActivity {
     FloatingActionButton floatingActionButton;
 
     private ActivityFormInicialBinding binding;
-    private NavHostFragment navHostFragment;
-    private NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +26,14 @@ public class FormInicial extends AppCompatActivity {
         initNavigation();
 
         floatingActionButton = findViewById(R.id.fab);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Toast.makeText(FormInicial.this,"FAB is clicked!", Toast.LENGTH_LONG). show();
-
-            }
-        });
+        floatingActionButton.setOnClickListener(view -> Toast.makeText(FormInicial.this,"FAB is clicked!", Toast.LENGTH_LONG). show());
                 
     }
     
     private void initNavigation(){
-        navHostFragment 
-                = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
-        navController = navHostFragment.getNavController();
+        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+        assert navHostFragment != null;
+        NavController navController = navHostFragment.getNavController();
         NavigationUI.setupWithNavController(binding.bottomNavigation, navController);
     }
     

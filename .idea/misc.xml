@@ -5,18 +5,24 @@
       <map>
         <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/drawable/background.xml" value="0.2085" />
         <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/drawable/button.xml" value="0.2495" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/drawable/ic_eye.xml" value="0.185" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/drawable/ic_mais2.xml" value="0.1255" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/drawable/ic_menu_perfil.xml" value="0.185" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/drawable/ic_olho.xml" value="0.185" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout-v21/activity_form_inicial.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_form_cadastro.xml" value="0.22" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_form_inicial.xml" value="0.16" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_form_login.xml" value="0.22" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_form_cadastro.xml" value="0.33" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_form_inicial.xml" value="0.22402736212056434" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_form_login.xml" value="0.25" />
         <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/activity_main.xml" value="0.1956521739130435" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/fragment_inicio.xml" value="0.18" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/fragment_perfil.xml" value="0.22402736212056434" />
-        <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1105" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/button.xml" value="0.1445" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_email.xml" value="0.1105" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_gender.xml" value="0.1575" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_idade.xml" value="0.1575" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1105" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_olho.xml" value="0.1105" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_user.xml" value="0.1575" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_cadastro.xml" value="0.22" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_login.xml" value="0.2" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/fragment_inicio.xml" value="0.1" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/fragment_perfil.xml" value="0.1" />
       </map>
     </option>
   </component>
