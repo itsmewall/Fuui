@@ -93,7 +93,7 @@
         android:id="@+id/text_cadastro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/esqueceuasenha"
+        android:text="@string/cadastrese"
         android:layout_marginTop="55dp"
         android:textColor="@color/green"
         android:textSize="18sp"
