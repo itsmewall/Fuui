@@ -64,7 +64,7 @@
         android:layout_marginTop="20dp"
         tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/button"
         style="@style/Button"
         android:text="@string/entrar"

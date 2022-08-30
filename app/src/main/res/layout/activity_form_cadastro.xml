@@ -8,10 +8,7 @@
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -143,17 +140,18 @@
 
     <TextView
         android:id="@+id/text_cadastro2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/entrar"
+        layout_constraintHorizontal_bias="0.498"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
         android:layout_marginTop="55dp"
+        android:text="@string/entrar"
         android:textColor="@color/green"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,NotSibling" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

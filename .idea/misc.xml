@@ -17,10 +17,11 @@
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1105" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_olho.xml" value="0.1105" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_user.xml" value="0.1575" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_cadastro.xml" value="0.22" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_cadastro.xml" value="0.2" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_inicial.xml" value="0.2" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_login.xml" value="0.2" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_maps.xml" value="0.22" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/fragment_inicio.xml" value="0.1" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/fragment_perfil.xml" value="0.1" />
       </map>
