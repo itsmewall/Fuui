@@ -7,6 +7,11 @@
         android:title="@string/menu_inicio"/>
 
     <item
+        android:id="@+id/menu_pedido"
+        android:icon="@drawable/ic_pedido"
+        android:title="@string/menu_pedido"/>
+
+    <item
         android:id="@+id/menu_perfil"
         android:icon="@drawable/ic_menu_perfil"
         android:title="@string/menu_perfil"/>

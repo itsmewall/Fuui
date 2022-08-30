@@ -1,13 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.PerfilFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/perfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/perfil"
+            android:layout_marginTop="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/fullname"
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomecompleto"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfil" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/Edit_Text"
+            android:layout_marginTop="60dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/emailinstitucional"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fullname"
+            app:drawableStartCompat="@drawable/ic_email" />
+
+        <TextView
+            android:id="@+id/numerodetelefone"
+            style="@style/Edit_Text"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/telefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:drawableStartCompat="@drawable/ic_telefone" />
+
+        <TextView
+            android:id="@+id/gender"
+            style="@style/Edit_Text2"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/genero"
+            app:layout_constraintStart_toStartOf="@id/numerodetelefone"
+            app:layout_constraintTop_toBottomOf="@id/numerodetelefone"
+            app:drawableStartCompat="@drawable/ic_genero" />
+
+        <TextView
+            android:id="@+id/Age"
+            style="@style/Edit_Text2"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/idade"
+            app:layout_constraintEnd_toEndOf="@id/numerodetelefone"
+            app:layout_constraintTop_toBottomOf="@id/numerodetelefone"
+            app:drawableStartCompat="@drawable/ic_calendario" />
+
+        <TextView
+            android:id="@+id/curso"
+            style="@style/Edit_Text"
+            android:layout_marginToop="10dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/curso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender"
+            app:drawableStartCompat="@drawable/ic_chapeu" />
+
+        <TextView
+            android:id="@+id/municipio"
+            style="@style/Edit_Text"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/municipio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/curso"
+            app:drawableStartCompat="@drawable/ic_cidade" />
+
+        <Button
+            android:id="@+id/button_cadastro"
+            android:layout_width="326dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:text="@string/editar"
+            android:textAlignment="center"
+            android:background="@drawable/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/municipio"
+            android:layout_marginTop="60dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

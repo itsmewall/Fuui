@@ -17,5 +17,10 @@
     <string name="menu_inicio">Início</string>
     <string name="menu_perfil">Perfil</string>
     <string name="menu_pedido">Pedido</string>
+    <string name="MeuPerfil">Meu Perfil</string>
+    <string name="telefone">Numero de Telefone</string>
+    <string name="curso">Curso</string>
+    <string name="municipio">Município</string>
+    <string name="editar">Editar</string>
     <string name="title_activity_maps">MapsActivity</string>
 </resources>

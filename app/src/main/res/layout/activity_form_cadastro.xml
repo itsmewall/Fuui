@@ -117,16 +117,20 @@
 
     <Button
         android:id="@+id/button_cadastro"
-        style="@style/Button"
+        android:layout_width="326dp"
+        android:layout_height="60dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textAllCaps="false"
         android:text="@string/cadastrar"
         android:textAlignment="center"
-        android:background="#29e37c"
+        android:background="@drawable/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/confirm"
         android:layout_marginTop="30dp"
-        tools:ignore="MissingConstraints"
-        android:textColor="@color/white"/>
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text_cadastro1"
@@ -139,10 +143,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/button_cadastro"
         tools:ignore="MissingConstraints" />
 
-    <TextView
+    <Button
         android:id="@+id/text_cadastro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -151,9 +155,11 @@
         android:textColor="@color/green"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
+        app:layout_constraintTop_toBottomOf="@id/button_cadastro"
         tools:ignore="MissingConstraints,NotSibling" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

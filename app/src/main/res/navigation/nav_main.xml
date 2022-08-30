@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_inicio" />
 
     <fragment
+        android:id="@+id/menu_pedido"
+        android:name="com.example.projetofuui.fragments.PedidoFragment"
+        android:label="fragment_pedido"
+        tools:layout="@layout/fragment_pedido" />
+
+    <fragment
         android:id="@+id/menu_perfil"
         android:name="com.example.projetofuui.fragments.PerfilFragment"
         android:label="fragment_perfil"
