@@ -81,7 +81,7 @@
         <TextView
             android:id="@+id/curso"
             style="@style/Edit_Text"
-            android:layout_marginToop="10dp"
+            android:layout_marginTop="10dp"
             android:drawablePadding="20dp"
             android:hint="@string/curso"
             app:layout_constraintEnd_toEndOf="parent"
