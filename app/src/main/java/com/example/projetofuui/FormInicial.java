@@ -23,10 +23,6 @@ public class FormInicial extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         initNavigation();
-
-        floatingActionButton = findViewById(R.id.fab);
-        floatingActionButton.setOnClickListener(view -> Toast.makeText(FormInicial.this,"FAB is clicked!", Toast.LENGTH_LONG). show());
-                
     }
     
     private void initNavigation(){
