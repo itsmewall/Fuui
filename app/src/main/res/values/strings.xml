@@ -16,5 +16,6 @@
     <string name="confirmeasenha">Confirme a senha</string>
     <string name="menu_inicio">Início</string>
     <string name="menu_perfil">Perfil</string>
+    <string name="menu_pedido">Pedido</string>
     <string name="title_activity_maps">MapsActivity</string>
 </resources>
