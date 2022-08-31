@@ -27,6 +27,7 @@ public class FormCadastro extends AppCompatActivity {
     private EditText create;
     private EditText confirm;
     private Button button_cadastro;
+    private Button text_cadastro;
     private FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener firebaseAuthListener;
 
@@ -88,8 +89,9 @@ public class FormCadastro extends AppCompatActivity {
             finish();
         });
 
-
     }
+
+
 
     @Override
     protected void onStart() {
@@ -107,4 +109,5 @@ public class FormCadastro extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }
