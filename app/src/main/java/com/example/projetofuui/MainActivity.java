@@ -1,7 +1,9 @@
 package com.example.projetofuui;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projetofuui.databinding.ActivityMapsBinding;

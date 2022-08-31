@@ -23,5 +23,4 @@
     <style name="ThemeOverlay.App.BottomNavigationView" parent="">
         <item name="colorOnPrimary">@color/green</item>
     </style>
-
 </resources>
