@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projetofuui.MainActivity;
-import com.example.projetofuui.MapsActivity;
 import com.example.projetofuui.R;
 import com.example.projetofuui.view.formCadastro.FormCadastro;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -26,11 +25,10 @@ public class FormLogin extends AppCompatActivity {
 
     private TextView hi;
     private TextView text_cadastro2;
-    private EditText email;
+    private EditText loginEmail;
     private EditText password;
     private Button Button;
     private FirebaseAuth mAuth;
-    FirebaseAuth.AuthStateListener firebaseAuthListener;
 
 
     @Override
@@ -39,48 +37,35 @@ public class FormLogin extends AppCompatActivity {
         setContentView(R.layout.activity_form_login);
 
         mAuth = FirebaseAuth.getInstance();
-
-        firebaseAuthListener = firebaseAuth -> {
-
-            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-            if (user != null) {
-                Intent intent = new Intent(FormLogin.this, MapsActivity.class);
-                startActivity(intent);
-                finish();
-            }
-
-        };
-
         Button button = (Button) findViewById(R.id.button);
-        Button text_cadastro2 = (Button) findViewById(R.id.text_cadastro2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String login = email.getText().toString();
+                String login = loginEmail.getText().toString();
                 String senha = password.getText().toString();
 
                 if(!TextUtils.isEmpty(login) || !TextUtils.isEmpty(senha)) {
                     mAuth.signInWithEmailAndPassword(login,senha)
-                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
-                                        abrirTelaPrincipal();
-                                    } else {
-                                        String error =task.getException().getMessage();
-                                        Toast.makeText(FormLogin.this, "", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                abrirTelaPrincipal();
+                            } else {
+                                String error = task.getException().getMessage();
+                                Toast.makeText(FormLogin.this, "", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
                 }
 
             }
         });
+        Button text_cadastro2 = (Button) findViewById(R.id.text_cadastro2);
         text_cadastro2.setOnClickListener(new View.OnClickListener() {
               @Override
               public void onClick(View view) {
                   abrirCadastro();
-
               }
           });
 }

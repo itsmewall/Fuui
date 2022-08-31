@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.projetofuui.MainActivity;
-import com.example.projetofuui.MapsActivity;
+import com.example.projetofuui.MainActivity;;;
 import com.example.projetofuui.R;
 import com.example.projetofuui.view.formLogin.FormLogin;
 import com.google.firebase.auth.FirebaseAuth;

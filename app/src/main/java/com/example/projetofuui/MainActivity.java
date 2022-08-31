@@ -1,5 +1,6 @@
 package com.example.projetofuui;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
@@ -8,29 +9,47 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.projetofuui.databinding.ActivityMapsBinding;
 import com.example.projetofuui.view.formCadastro.FormCadastro;
+import com.example.projetofuui.view.formLogin.FormLogin;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.ktx.Firebase;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
 
-    private Button mDriver, mCustomer;
+    private FirebaseAuth mAuth;
+    private GoogleMap mMap;
+    private ActivityMapsBinding binding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDriver = (Button) findViewById(R.id.driver);
-        mCustomer = (Button) findViewById(R.id.customer);
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                .findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
 
-        mDriver.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, FormCadastro.class);
-            startActivity(intent);
-            finish();
+        binding = ActivityMapsBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+    }
 
-        });
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
 
-        Object mapFragment = getSupportFragmentManager().findFragmentById(R.id.map_fragment);
-
+        // Add a marker in Sydney and move the camera
+        LatLng sydney = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
