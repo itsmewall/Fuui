@@ -20,6 +20,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class FormLogin extends AppCompatActivity {
 
@@ -27,7 +29,7 @@ public class FormLogin extends AppCompatActivity {
     private TextView text_cadastro2;
     private EditText loginEmail;
     private EditText password;
-    private Button Button;
+    private Button loginButton;
     private FirebaseAuth mAuth;
 
 
@@ -36,29 +38,34 @@ public class FormLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_login);
 
-        mAuth = FirebaseAuth.getInstance();
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        loginEmail = (EditText) findViewById(R.id.loginEmail);
+        password = (EditText) findViewById(R.id.password);
+
+
+        loginButton = (Button) findViewById(R.id.loginButton);
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String login = loginEmail.getText().toString();
-                String senha = password.getText().toString();
-
-                if(!TextUtils.isEmpty(login) || !TextUtils.isEmpty(senha)) {
+                final String login = loginEmail.getText().toString();
+                final String senha = password.getText().toString();
+                mAuth = FirebaseAuth.getInstance();
+                if(!TextUtils.isEmpty(login) || !TextUtils.isEmpty(senha))
                     mAuth.signInWithEmailAndPassword(login,senha)
-                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                abrirTelaPrincipal();
-                            } else {
-                                String error = task.getException().getMessage();
-                                Toast.makeText(FormLogin.this, "", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
-                }
+                            .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
 
+                                        String user_id = mAuth.getCurrentUser().getUid();
+                                        DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(user_id);
+                                        current_user_db.setValue(true);
+                                        abrirTelaPrincipal();
+
+                                    } else {
+                                        Toast.makeText(FormLogin.this, "Erro no login", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
             }
         });
         Button text_cadastro2 = (Button) findViewById(R.id.text_cadastro2);
@@ -72,7 +79,7 @@ public class FormLogin extends AppCompatActivity {
 
 
     private void abrirTelaPrincipal(){
-        Intent intent = new Intent(FormLogin.this, MainActivity.class);
+        Intent intent = new Intent(FormLogin.this, FormCadastro.class);
         startActivity(intent);
         finish();
     }

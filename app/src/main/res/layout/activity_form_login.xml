@@ -44,9 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hi"
         android:layout_marginTop="70dp"
-        android:hint="@string/emailinstitucional"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/green"
         app:boxBackgroundColor="@color/white">
 
         <EditText
@@ -54,8 +51,8 @@
             style="@style/Edit_Text"
             android:drawableStart="@drawable/ic_email"
             android:drawablePadding="20dp"
-            android:textColor="@color/black"
             android:inputType="textEmailAddress"
+            android:hint="@string/emailinstitucional"
             android:maxLines="1"
             tools:ignore="Autofill,MissingConstraints,RtlHardcoded,TextFields" />
 
@@ -66,20 +63,16 @@
         android:layout_width="326dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:hint="@string/senha"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailLayout"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/black"
         app:boxBackgroundColor="@color/white">
 
         <EditText
             android:id="@+id/password"
             style="@style/Edit_Text"
-            android:textColor="@color/black"
+            android:hint="@string/senha"
             android:inputType="numberPassword"
             android:drawableStart="@drawable/ic_key"
             android:drawablePadding="20dp"
@@ -88,7 +81,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginButton"
         android:layout_width="326dp"
         android:layout_height="60dp"
         android:text="@string/entrar"
@@ -132,9 +125,9 @@
         app:layout_constraintTop_toBottomOf="@id/button"
         tools:ignore="MissingConstraints"
         android:textAllCaps="false"
-        android:outlineSpotShadowColor="@color/white"
         android:onClick="cadastrar_se"
-        android:outlineAmbientShadowColor="@color/white"/>
+        android:shadowColor="@color/white"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -146,11 +139,10 @@
         android:textStyle="bold"
         android:textAllCaps="false"
         android:backgroundTint="@color/white"
+        android:shadowColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        android:outlineSpotShadowColor="@color/white"
-        android:outlineAmbientShadowColor="@color/white"/>
+        app:layout_constraintTop_toBottomOf="@id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
