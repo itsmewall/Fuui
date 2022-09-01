@@ -12,16 +12,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.projetofuui.MainActivity;
+import com.example.projetofuui.FormInicial;
 import com.example.projetofuui.R;
 import com.example.projetofuui.view.formCadastro.FormCadastro;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Objects;
 
 public class FormLogin extends AppCompatActivity {
 
@@ -49,14 +50,14 @@ public class FormLogin extends AppCompatActivity {
                 final String login = loginEmail.getText().toString();
                 final String senha = password.getText().toString();
                 mAuth = FirebaseAuth.getInstance();
-                if(!TextUtils.isEmpty(login) || !TextUtils.isEmpty(senha))
+                if(!TextUtils.isEmpty(login) || !TextUtils.isEmpty(senha)) {
                     mAuth.signInWithEmailAndPassword(login,senha)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
 
-                                        String user_id = mAuth.getCurrentUser().getUid();
+                                        String user_id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
                                         DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(user_id);
                                         current_user_db.setValue(true);
                                         abrirTelaPrincipal();
@@ -66,6 +67,7 @@ public class FormLogin extends AppCompatActivity {
                                     }
                                 }
                             });
+                }
             }
         });
         Button text_cadastro2 = (Button) findViewById(R.id.text_cadastro2);
@@ -79,7 +81,7 @@ public class FormLogin extends AppCompatActivity {
 
 
     private void abrirTelaPrincipal(){
-        Intent intent = new Intent(FormLogin.this, FormCadastro.class);
+        Intent intent = new Intent(FormLogin.this, FormInicial.class);
         startActivity(intent);
         finish();
     }
