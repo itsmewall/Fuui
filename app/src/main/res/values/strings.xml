@@ -23,4 +23,5 @@
     <string name="municipio">Município</string>
     <string name="editar">Editar</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="Salvar">Salvar</string>
 </resources>

@@ -10,14 +10,14 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="833dp">
 
         <ImageView
             android:id="@+id/perfil"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/perfil"
             android:layout_marginTop="90dp"
+            android:src="@drawable/perfil"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,24 +28,24 @@
             style="@style/TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nomecompleto"
             android:layout_marginTop="30dp"
+            android:text=""
             android:textSize="25sp"
-            tools:ignore="MissingConstraints"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/perfil" />
+            app:layout_constraintTop_toBottomOf="@id/perfil"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/email"
             style="@style/Edit_Text"
             android:layout_marginTop="60dp"
             android:drawablePadding="20dp"
-            android:hint="@string/emailinstitucional"
+            android:hint=""
+            app:drawableStartCompat="@drawable/ic_email"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/fullname"
-            app:drawableStartCompat="@drawable/ic_email" />
+            app:layout_constraintTop_toBottomOf="@id/fullname" />
 
         <TextView
             android:id="@+id/numerodetelefone"
@@ -53,10 +53,10 @@
             android:layout_marginTop="10dp"
             android:drawablePadding="20dp"
             android:hint="@string/telefone"
+            app:drawableStartCompat="@drawable/ic_telefone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/email"
-            app:drawableStartCompat="@drawable/ic_telefone" />
+            app:layout_constraintTop_toBottomOf="@id/email" />
 
         <TextView
             android:id="@+id/gender"
@@ -64,9 +64,9 @@
             android:layout_marginTop="10dp"
             android:drawablePadding="20dp"
             android:hint="@string/genero"
+            app:drawableStartCompat="@drawable/ic_genero"
             app:layout_constraintStart_toStartOf="@id/numerodetelefone"
-            app:layout_constraintTop_toBottomOf="@id/numerodetelefone"
-            app:drawableStartCompat="@drawable/ic_genero" />
+            app:layout_constraintTop_toBottomOf="@id/numerodetelefone" />
 
         <TextView
             android:id="@+id/Age"
@@ -74,9 +74,9 @@
             android:layout_marginTop="10dp"
             android:drawablePadding="20dp"
             android:hint="@string/idade"
+            app:drawableStartCompat="@drawable/ic_calendario"
             app:layout_constraintEnd_toEndOf="@id/numerodetelefone"
-            app:layout_constraintTop_toBottomOf="@id/numerodetelefone"
-            app:drawableStartCompat="@drawable/ic_calendario" />
+            app:layout_constraintTop_toBottomOf="@id/numerodetelefone" />
 
         <TextView
             android:id="@+id/curso"
@@ -84,10 +84,10 @@
             android:layout_marginTop="10dp"
             android:drawablePadding="20dp"
             android:hint="@string/curso"
+            app:drawableStartCompat="@drawable/ic_chapeu"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/gender"
-            app:drawableStartCompat="@drawable/ic_chapeu" />
+            app:layout_constraintTop_toBottomOf="@id/gender" />
 
         <TextView
             android:id="@+id/municipio"
@@ -95,26 +95,26 @@
             android:layout_marginTop="10dp"
             android:drawablePadding="20dp"
             android:hint="@string/municipio"
+            app:drawableStartCompat="@drawable/ic_cidade"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/curso"
-            app:drawableStartCompat="@drawable/ic_cidade" />
+            app:layout_constraintTop_toBottomOf="@id/curso" />
 
         <Button
             android:id="@+id/button_cadastro"
             android:layout_width="326dp"
             android:layout_height="60dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:textAllCaps="false"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button"
             android:text="@string/editar"
             android:textAlignment="center"
-            android:background="@drawable/button"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/municipio"
-            android:layout_marginTop="60dp"
             tools:ignore="MissingConstraints" />
 
 

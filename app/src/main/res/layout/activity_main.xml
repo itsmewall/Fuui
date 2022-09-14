@@ -6,6 +6,18 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sou um motorista"
+        android:id="@+id/driver"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quero uma carona"
+        android:id="@+id/customer"/>
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map_fragment"
         class='com.google.gms.maps.SupportMapFragments'

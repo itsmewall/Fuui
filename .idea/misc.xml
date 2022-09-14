@@ -20,18 +20,39 @@
         <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/layout/fragment_perfil.xml" value="0.25" />
         <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
         <entry key="..\:/Users/Lucas/AndroidStudioProjects/ProjetoFuui/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.147" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/button.xml" value="0.1635" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_mais.xml" value="0.1635" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_menu_inicio.xml" value="0.1635" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/ic_menu_perfil.xml" value="0.1635" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/button.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/card_ofertas.xml" value="0.1975" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_chapeu.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_cidade.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_combustivel.xml" value="0.1965" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_email.xml" value="0.1975" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_eye.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_key.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_menu_inicio.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_menu_perfil.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_pedido.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/ic_user.xml" value="0.2475" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/menu.xml" value="0.1975" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/drawable/shape_container_ofertas.xml" value="0.2" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout-v21/activity_form_inicial.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/activity_form_cadastro.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/activity_form_inicial.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/activity_form_login.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/activity_main.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/activity_maps.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/activity_splash.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/fragment_inicio.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/fragment_pedido.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/layout/tela_de_ofertas.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/Fuui.git/app/src/main/res/menu/menu_pesquisa.xml" value="0.20436083796494228" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/drawable/splash_bg.xml" value="0.1635" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_cadastro.xml" value="0.33" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_inicial.xml" value="0.25" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_form_login.xml" value="0.13903985507246377" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_maps.xml" value="0.13043478260869565" />
         <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/layout/activity_splash.xml" value="0.15" />
-        <entry key="..\:/Users/walla/AndroidStudioProjects/FuuiUnB/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1953125" />
       </map>
     </option>
   </component>

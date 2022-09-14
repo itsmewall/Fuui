@@ -130,7 +130,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginButton"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,UsingOnClickInXml"
         android:textAllCaps="false"
         android:outlineSpotShadowColor="@color/white"
         android:onClick="cadastrar_se"
