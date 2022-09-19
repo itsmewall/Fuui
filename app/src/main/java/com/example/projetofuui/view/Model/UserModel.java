@@ -19,12 +19,12 @@ public class UserModel {
 
     public UserModel(String id, String email, String fullname, String gender, String Age, String create, String confirm) {
         this.id = id;
-        this.id = email;
-        this.id = fullname;
-        this.id = gender;
-        this.id = Age;
-        this.id = create;
-        this.id = confirm;
+        this.email = email;
+        this.fullname = fullname;
+        this.gender = gender;
+        this.Age = Age;
+        this.create = create;
+        this.confirm = confirm;
     }
 
     public String getId() {

@@ -14,7 +14,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.projetofuui.FormInicial;
 import com.example.projetofuui.R;
+import com.example.projetofuui.fragments.PedidoFragment;
 import com.example.projetofuui.view.formCadastro.FormCadastro;
+import com.example.projetofuui.view.ofertas;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -81,7 +83,7 @@ public class FormLogin extends AppCompatActivity {
 
 
     private void abrirTelaPrincipal(){
-        Intent intent = new Intent(FormLogin.this, FormInicial.class);
+        Intent intent = new Intent(FormLogin.this, ofertas.class);
         startActivity(intent);
         finish();
     }
